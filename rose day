@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Dipanjali</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #fff0f3 0%, #ffdde1 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden;
+        }
+
+        .card {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 50px 40px;
+            border-radius: 30px;
+            box-shadow: 0 15px 35px rgba(255, 71, 87, 0.15);
+            max-width: 350px;
+            z-index: 10;
+            border: 2px solid #ffb3c1;
+        }
+
+        /* The Rose Construction */
+        .rose-container {
+            margin-bottom: 20px;
+        }
+
+        .rose-bloom {
+            width: 80px;
+            height: 80px;
+            background: #ff4757;
+            border-radius: 50% 0 50% 50%;
+            margin: 0 auto;
+            transform: rotate(-45deg);
+            animation: sway 3s ease-in-out infinite;
+            box-shadow: inset -10px -10px 20px rgba(0,0,0,0.1);
+        }
+
+        .stem {
+            width: 6px;
+            height: 60px;
+            background: #2ed573;
+            margin: -5px auto 0;
+            border-radius: 0 0 4px 4px;
+        }
+
+        h1 {
+            color: #ff4757;
+            font-size: 1.8rem;
+            margin-top: 15px;
+        }
+
+        .name {
+            display: block;
+            font-size: 2.2rem;
+            color: #d63031;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        p {
+            color: #57606f;
+            line-height: 1.6;
+            font-style: italic;
+            margin-top: 20px;
+        }
+
+        /* Animations */
+        @keyframes sway {
+            0%, 100% { transform: rotate(-45deg) scale(1); }
+            50% { transform: rotate(-40deg) scale(1.05); }
+        }
+
+        /* Simple floating petal effect */
+        .petal {
+            position: absolute;
+            background: #ffb3c1;
+            border-radius: 150% 0 150% 150%;
+            opacity: 0.6;
+            z-index: 1;
+            animation: fall 6s linear infinite;
+        }
+
+        @keyframes fall {
+            0% { transform: translateY(-10vh) rotate(0deg); opacity: 0; }
+            10% { opacity: 0.8; }
+            100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="petal" style="left: 10%; width: 20px; height: 20px; animation-delay: 0s;"></div>
+    <div class="petal" style="left: 30%; width: 15px; height: 15px; animation-delay: 2s;"></div>
+    <div class="petal" style="left: 70%; width: 25px; height: 25px; animation-delay: 4s;"></div>
+    <div class="petal" style="left: 90%; width: 18px; height: 18px; animation-delay: 1s;"></div>
+
+    <div class="card">
+        <div class="rose-container">
+            <div class="rose-bloom"></div>
+            <div class="stem"></div>
+        </div>
+        <h1>Happy Rose Day,</h1>
+        <span class="name">Dipanjali</span>
+        <p>"Just like a rose fills the air with fragrance, you fill my life with love and happiness. You're the most beautiful flower in my world."</p>
+    </div>
+
+</body>
+</html>
